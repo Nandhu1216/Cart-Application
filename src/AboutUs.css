@@ -1,0 +1,56 @@
+/* src/AboutUs.css */
+.about-us-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  /* Darken the glassmorphism slightly for much better text readability */
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-us-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #4caf50, #a1e27a);
+}
+
+.about-us-container h2 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #a5d6a7;
+  text-shadow: 1px 2px 5px rgba(0,0,0,0.6);
+}
+
+.about-us-container p {
+  font-size: 1.35rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.8);
+}
+
+@media (max-width: 768px) {
+  .about-us-container {
+    padding: 30px 20px;
+    margin: 0 20px;
+  }
+  .about-us-container h2 {
+    font-size: 2.2rem;
+  }
+  .about-us-container p {
+    font-size: 1.15rem;
+  }
+}

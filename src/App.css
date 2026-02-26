@@ -1,0 +1,113 @@
+/* src/App.css */
+.app-container {
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  /* Fix background issue by applying it directly to landing-page wrapper */
+  background-image: linear-gradient(135deg, rgba(20, 60, 30, 0.7), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1466692476877-3e11abe52528?q=80&w=2670&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.content {
+  padding-top: 15vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeDown 1s ease-out forwards;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.content h1 {
+  font-size: 5.5rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-shadow: 2px 4px 15px rgba(0,0,0,0.8);
+  color: #fff;
+}
+
+.divider {
+  width: 120px;
+  height: 6px;
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  margin: 0 auto;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px rgba(76, 175, 80, 0.5);
+  margin-bottom: 30px;
+}
+
+.content p {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: 15px 0 45px;
+  text-shadow: 1px 2px 10px rgba(0,0,0,0.8);
+  color: #f1f8e9;
+}
+
+.get-started-button {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+  border: none;
+  padding: 18px 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.5);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.get-started-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(46, 125, 50, 0.7);
+  background: linear-gradient(135deg, #43a047, #1b5e20);
+}
+
+.get-started-button:active {
+  transform: translateY(-2px);
+}
+
+.aboutus-section {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+  padding-top: 40px;
+  animation: fadeUp 1s ease-out 0.5s both;
+  z-index: 2;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.product-list-container.visible {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
