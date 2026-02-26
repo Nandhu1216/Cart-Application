@@ -1,5 +1,6 @@
-# Paradise Nursery
+# E-Commerce Plant Shop Application (React & Redux)
+### Final Project: Paradise Nursery Shopping Cart
 
-A shopping cart application for an online plant shop.
+A comprehensive, dynamic shopping cart web application built for an online plant shop called Paradise Nursery.
 
-This project was created for the final evaluation of building a functional e-commerce web application using React and Redux Toolkit.
+This project serves as the final evaluation for designing and constructing functional, state-driven e-commerce platforms using modern React and the robust Redux Toolkit architecture.
