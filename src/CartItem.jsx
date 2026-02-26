@@ -18,7 +18,7 @@ const CartItem = ({ onContinueShopping }) => {
   };
 
   const handleCheckoutShopping = (e) => {
-    setCheckoutMessage('Order placed successfully! Thank you for shopping with Paradise Nursery.');
+    setCheckoutMessage('Coming Soon! Order placement will be available shortly.');
     
     // Clear cart and redirect to home after 3 seconds so user can see success message
     setTimeout(() => {
